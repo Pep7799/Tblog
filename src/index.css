@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #D5C5C8;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+/*Headerr*/
+.header{
+  position: fixed;
+  height: 20px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: .3s ease-in;
+  
+}
+
+.navbar{
+  display: flex ;
+  justify-content: space-between;
+  min-height:5vh;
+  margin: 0px 0px 500px 0px ;
+  align-items:center;
+  padding: 0rem 2rem ;
+  background:  #EDE7D9;
+}
+
+.navbar a {
+  text-decoration: none;
+  list-style: none;
+  color: #000004;
+  font-weight: 500;
+
+}
+
+.ul1 {
+  list-style: none ;
+  display: flex;
+
+
+}
+.li1 {
+  padding-left: 55px;
+  position: relative ;
+  font-size: 13px;
+  text-transform: uppercase;
+  
+}
+
+/*About me*/
+.firstpart {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  height: 690px;
+}
+
+.one {
+  margin: 70px 5px 60px 10px;
+  align-items: center;
+  color: #000004;
+  line-height: 45px;
+}
+
+.justspan {
+  color: #EDE7D9 ;
+}
+
+.btn {
+  margin: 55px 10px;
+}
+button {
+  padding: 10px 20px;
+  color: #000004;
+  font-size: 15px;
+  font-weight: 700;
+  background: #EDE7D9;
+}
+
+button:hover {
+  background: #000004;
+  color: #EDE7D9;
+  cursor: pointer;
+
+}
+
+/*about parttwo*/
+.secondpart {
+  display: flex;
+  justify-content: space-between;
+  color: #000004;
+
+}
+
+.reasons {
+  margin-top: 70px;
+  margin-right: 150px;
+}
+
+.reasons p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+} 
+
+
+
+
+/*Contact*/
+.contact {
+  margin-top: 100px;
+  height: 82vh;
+
+}
+
+
+
+/*Writeups*/
+.writeups {
+  margin: 50px 29px;
+  height: 83vh;
+ 
+  
+}
+.writeups h3 {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 10px;
+  font-weight: 700;
+  margin: 5px 0 20px 0;
+  text-transform: uppercase;
+}
+.writeups h4 {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 30px;
+  font-size: 19px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 22px;
+  margin: 10px 10px;
+}
+
+.images {
+  height: 250px;
+  width: 300px;
+  margin: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: auto;
+  }
+}
+
+.singlepost {
+  margin-top: 100px;
+}
+
+/*Footer*/
+.footer {
+  color: #000004;
+  text-align: center;
+  background: #EDE7D9;
+  padding: 3px 0px;
+ 
+}
+
+
+.pre {
+  margin-top: 050px;
+}
