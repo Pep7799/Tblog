@@ -28,7 +28,7 @@ useEffect(() => {
   return (
     <section className='writeups'>
     <div>
-        <h3>Writeups page</h3> 
+        <h3>Write-ups page</h3> 
         <h4>You are viewing {posts.length} posts</h4>       
     </div>
     <div className='grid'>
@@ -39,8 +39,8 @@ useEffect(() => {
           <img className='images' width="auto" src={post.mainImage.asset.url} alt={post.title} />
          
           <h5>{post.title}</h5>
-          <div className='btn'>
-          <Link  to={`/writeups/${post.slug.current}` }> <button> Read All </button></Link>
+          <div className='btnbtn'>
+          <Link  to={`/writeups/${post.slug.current}` }> <button > Read This </button></Link>
           </div>
         </article>
       ))}
