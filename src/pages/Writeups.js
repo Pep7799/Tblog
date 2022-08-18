@@ -12,15 +12,16 @@ useEffect(() => {
       title,
       slug,
       body,
+      publishedAt,
       mainImage{
         asset -> {
           _id,
           url
         },
-        alt
+        alt,
       }
-    }`
-  ).then((data)=> setPosts(data)).catch(console.error)
+    } | order(publishedAt desc)`) 
+    .then((data)=> setPosts(data)).catch(console.error)
 
 }, [])
 

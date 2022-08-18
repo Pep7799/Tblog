@@ -1,14 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import picone from '../images/picone.jpg'
-import pictwo from '../images/pictwo.jpg'
+import picone from '../images/picone.png'
+import pictwo from '../images/pictwo.png'
+import {GiOpenBook} from 'react-icons/gi' 
+import {BsAwardFill} from 'react-icons/bs'
 
 export default function AboutMe() {
   return (
     <section className='aboutme'>
       <div className='firstpart'>
         <div className='one'>
-          <h1>Hi! <br /> I am <span className='justspan'> Tosin </span><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, similique.</h1>
+          <h1 className='intro'>  THE <br /> <span className='justspan'> ULTIMATE </span> WRITEUP FROM 
+          <br /> FOLAMI OLUWATOSIN </h1>
+          <ul className='ul2'>
+            <li className='li2'>Poems</li>
+            <li className='li2'>Short stories</li>
+            <li className='li2'>Quotes</li>
+            <li className='li2'>Stories</li>
+          </ul>
            <div className='btn'>
             <Link to = '/writeups'> <button> Jump to my writeups </button></Link>
            </div>
@@ -22,18 +31,19 @@ export default function AboutMe() {
       <div className='secondpart'>
 
         <div className='imgpart'>
-          <img src={pictwo} width= '400' height='450' alt="animated" />
+          <img src={pictwo} className= "bgimg" alt="animated" />
+          <p className='text'>Services I offer</p>
+          <div className='text2'>
+           
+            <p>  <GiOpenBook style={{color: '#B2AD4D', fontSize: '25px'}}/> Proofreading and Editing </p><h5>We edit, proofread and sort your works or writings</h5>
+            <br />
+            <br />
+            <br />
+            <p> <BsAwardFill style={{color: '#B2AD4D', fontSize: '25px'}}/> Original content </p> <h5>Get your poems and stories with 0% plagiarism</h5>
+          </div>
         </div>
 
-        <div className='reasons'>
-          <p>My latest writings</p>
-          <ul>
-            <li>Hello <br />Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-            <li>Hello <br />Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-            <li>Hello <br />Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-          </ul>
-        </div>
-
+        
       </div>
 
     </section>

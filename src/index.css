@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 
 * {
   padding: 0;
@@ -12,30 +15,69 @@ html{
 }
 
 body {
-  background-color: #D5C5C8;
-  font-family: 'Frank Ruhl Libre', serif;
-}
+  font-family: 'Poppins';
 
-/*Headerr*/
-.header{
-  position: fixed;
-  height: 20px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transition: .3s ease-in;
   
 }
+
+/*Headerr   
+  
+ 
+ 
+  padding: 0rem 1rem ;
+  background: #FFF;
+
+  position: sticky;
+  top: 0;
+  
+  */
+
 
 .navbar{
   display: flex ;
   justify-content: space-between;
-  min-height:5vh;
-  margin: 0px 0px 500px 0px ;
+  min-height: 4vh;
+  height: 65px;
+  margin: 0px 10px ;
+  z-index: 10;
+  background: #FFF;
   align-items:center;
-  padding: 0rem 2rem ;
-  background:  #EDE7D9;
+
+}
+
+.logo {
+  margin: 0px 10px 10px 30%;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  display: inline-block;
+  font-size: 10px;
+}
+.logos {
+  display: flex;
+}
+
+.picone {
+  width: 45px;
+  height: 45px;
+  margin-top: 16px;
+}
+
+
+.pictwo {
+  width: 15px;
+  height: 18px;
+}
+
+.right h2 {
+  margin-top: 19px;
+  font-size: 16px;
+}
+.right span {
+  font-family: 'Sacramento', cursive;
+  font-weight: 400;
+font-size: 34px;
+line-height: 53px;
+
 }
 
 .navbar a {
@@ -49,14 +91,21 @@ body {
 .ul1 {
   list-style: none ;
   display: flex;
+  padding-top: 30px;
+  
 
 
 }
 .li1 {
-  padding-left: 55px;
+  padding-left: 105px;
   position: relative ;
   font-size: 13px;
   text-transform: uppercase;
+  color: #000000;
+    
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
   
 }
 
@@ -64,19 +113,43 @@ body {
 .firstpart {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 60px;
   height: 690px;
 }
 
 .one {
-  margin: 70px 5px 60px 10px;
+  margin: 20px 5px 60px 40px;
   align-items: center;
   color: #000004;
   line-height: 45px;
 }
 
+
+
+.intro {
+  text-align: center;
+  font-family: 'Poppins';
+}
 .justspan {
-  color: #EDE7D9 ;
+  color: #B2AD4D ;
+  font-family: 'Lobster';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+}
+
+.ul2 {
+  list-style: none;
+}
+
+.ul2 li::before {
+  content: "\2022";
+  color: #B2AD4D;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
 }
 
 .btn {
@@ -84,38 +157,56 @@ body {
 }
 button {
   padding: 10px 20px;
-  color: #000004;
+  color: #B2AD4D;
   font-size: 15px;
   font-weight: 700;
-  background: #EDE7D9;
+  background: #FFF;
+  border-radius: 8px;
 }
 
 button:hover {
-  background: #000004;
-  color: #EDE7D9;
+  background: #B2AD4D;
+  color: #FFF;
   cursor: pointer;
 
 }
 
 /*about parttwo*/
-.secondpart {
-  display: flex;
-  justify-content: space-between;
-  color: #000004;
+
+.imgpart {
+  position: relative;
+  
+}
+
+.bgimg {
+  height: 500px;
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+  top: 20%;
+  left:60%;
+  font-size: 20px; 
+  font-family: 'Lobster';
+
 
 }
 
-.reasons {
-  margin-top: 70px;
-  margin-right: 150px;
+.text2 {
+  position: absolute;
+  top: 25%;
+  left:60%;
+  
+
+
 }
 
-.reasons p {
-  font-size: 20px;
-  font-style: italic;
+.text2 p {
   font-weight: 700;
-} 
-
+  font-size: 20px;
+  margin: 10px 0px 10px 0px;
+}
 
 
 
