@@ -20,25 +20,22 @@ body {
   
 }
 
-/*Headerr   
-  
- 
- 
-  padding: 0rem 1rem ;
-  background: #FFF;
 
-  position: sticky;
-  top: 0;
-  
-  */
+@media(max-width: 452px) {
+  body {
+      overflow-x: hidden;
+  }
+
+}
+
 
 
 .navbar{
-  display: flex ;
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-between; 
   min-height: 4vh;
-  height: 65px;
-  margin: 0px 10px ;
+  height: 85px;
+  margin: 0px 8px ;
   z-index: 10;
   background: #FFF;
   align-items:center;
@@ -57,26 +54,30 @@ body {
 }
 
 .picone {
-  width: 45px;
-  height: 45px;
-  margin-top: 16px;
+  width: 65px;
+  height: 75px;
+  margin-top: 7px;
 }
 
 
 .pictwo {
-  width: 15px;
-  height: 18px;
+  width: 19px;
+  height: 36px;
+  margin-left: 3px;
+ 
 }
 
 .right h2 {
   margin-top: 19px;
   font-size: 16px;
+  
 }
 .right span {
   font-family: 'Sacramento', cursive;
   font-weight: 400;
-font-size: 34px;
-line-height: 53px;
+  font-size: 34px;
+  line-height: 53px;
+  letter-spacing: 5px;
 
 }
 
@@ -88,16 +89,20 @@ line-height: 53px;
 
 }
 
-.ul1 {
+.navbar a:hover {
+  color: #B2AD4D;
+}
+.nav-menu {
   list-style: none ;
   display: flex;
-  padding-top: 30px;
+  justify-content: space-between;
+  margin-top: 30px;
   
 
 
 }
-.li1 {
-  padding-left: 105px;
+.each-item {
+  padding-left: 50px;
   position: relative ;
   font-size: 13px;
   text-transform: uppercase;
@@ -108,6 +113,90 @@ line-height: 53px;
   font-weight: 600;
   
 }
+
+.close {
+  display: none;
+}
+
+
+@media screen and (max-width:452px) {
+
+  .navbar {
+    max-width: 100%;
+    overflow: hidden;
+    margin-right:15px;
+  }
+ 
+  
+}
+
+@media screen and (max-width:660px) {
+
+  .navbar {
+      max-width: 100%;
+      overflow: hidden;
+  }
+  .close {
+      display: block;
+      width: 5vh; 
+    
+  }
+  .close:hover {
+      cursor:pointer;
+  }
+  .nav-menu {
+      position: fixed;
+      left: 100%;
+      top: 60px;
+      flex-direction: column;
+      background-color: #B2AD4D;
+      width: 60%;
+      height: 80%;
+      z-index: 999;
+      text-align: center;
+      transition: 0.3s;
+      overflow-y: hidden;
+  }
+
+  .each-item {
+      margin:5px 50px 10px 0;
+      color: white;
+   
+  }
+  .navbar a:hover {
+    color: #FFF;
+  }
+  .nav-menu.active {
+      left: 0;
+      
+  }
+
+
+  .nav-menu:hover {
+      cursor: pointer;
+  }
+
+
+
+}  
+
+@media screen and (max-width:900px) {
+  .logo {
+    margin: 0px 10px 10px 3%;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+
+
+
 
 /*About me*/
 .firstpart {
@@ -170,6 +259,43 @@ button:hover {
   cursor: pointer;
 
 }
+@media screen and (max-width:900px) {
+  .firstpart {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 60px;
+    height: 900px;
+  }
+  .picture {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  .picture img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+ 
+
+  .btn {
+    margin: 55px 0px;
+  }
+  button {
+    padding: 18px 28px;
+    color: #B2AD4D;
+    font-size: 15px;
+    font-weight: 700;
+    background: #FFF;
+    border-radius: 8px;
+  }
+  
+  
+}
+
 
 /*about parttwo*/
 
@@ -212,9 +338,144 @@ button:hover {
 
 /*Contact*/
 .contact {
-  margin-top: 100px;
-  height: 82vh;
+  margin-top: 10px;
+ 
 
+}
+
+ 
+.contact h1 {
+  color: #000;
+  text-align: center;
+}
+
+
+.contactform {
+  width: 50%;
+  align-self: center;
+  margin: 50px auto;
+}
+
+.formpart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emailpart {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #B2AD4D;
+  box-sizing:border-box;
+  box-shadow: 0px 2px 2px #B2AD4D;
+  border-radius:39px;
+  padding: 10px 35px;
+  margin: 10px 0;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.textpart {
+  height: 250px;
+  padding: 25px 35px;
+}
+
+.contactsubmit {
+  margin: 10px 0px;
+  border: none;
+  color: #fff ;
+  font-weight: 700px;
+  font-size: 15px;
+  line-height: 16px;
+  width: 100%;
+  text-align: center;
+  padding: 17px 35px;
+  background-color: #000;
+  border-radius: 35px;
+}
+
+.contactsubmit:hover {
+  color: #000;
+  background: #B2AD4D;
+  cursor: pointer;
+}
+
+.contacticons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  
+}
+.icon{
+  opacity: 0.8;
+  transition: width 2s;
+}
+.icon:hover {
+  opacity: 1;
+  height: 43px;
+}
+
+
+img {
+ 
+  margin-left: 20px;
+ 
+
+}
+.emailclass {
+  position: relative;
+}
+
+.emailimage{
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.emailtext{
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+bottom: 100%;
+left: 100%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.emailtext > p{
+  background-color: #9BD8F3;
+  color: black;
+  font-size: 16px;
+  padding: 10px 12px;
+}
+
+.emailclass:hover .emailimage {
+  opacity: 0.3;
+}
+
+.emailclass:hover .emailtext {
+opacity: 1;
+}
+
+@media(max-width: 452px) {
+.contacticons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+.emailtext{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 250%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 }
 
 
@@ -267,8 +528,9 @@ button:hover {
 
 .btnbtn button:hover {
   background: #B2AD4D;
-  color: #FFF;
-  cursor: pointer
+  color: #000;
+  cursor: pointer;
+  border: 4px solid #FFF;
 }
 
 @media (max-width: 900px) {
@@ -282,20 +544,67 @@ button:hover {
   }
 }
 
+
+/*Singlepost*/
 .singlepost {
-  margin-top: 100px;
+  margin-top: 10px;
+}
+
+.loading  {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+.title {
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 16px;
+  font-style: italic;
+  font-family: 'Lobster', cursive;
+  margin: 7px;
+  
+}
+
+.singleimage {
+  width: 300px;
+  height: 300px;
+  margin: 5px 60px;
+  align-items: center;
+}
+
+.body {
+  margin: 5px 50px;
+
+}
+
+h3 {
+  font-family: 'Lobster', cursive;
+  margin-bottom: 10px;
+}
+
+.author {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  margin-top: 5px;
+}
+
+.singlebtn {
+  margin: 30px 30px;
+}
+
+.btnbtnbtn {
+  padding: 10px 43%;
 }
 
 /*Footer*/
 .footer {
   color: #000004;
   text-align: center;
-  background: #EDE7D9;
+  background: #FFF;
   padding: 3px 0px;
  
 }
 
-
-.pre {
-  margin-top: 050px;
-}

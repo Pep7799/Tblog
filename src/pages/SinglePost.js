@@ -31,20 +31,24 @@ export default function SinglePost() {
 
   
   return (
-    <div className='pre'>
-      {isLoading ? (<h1>Loading...</h1>) : (
+    <div className='singlepost'>
+      {isLoading ? (<h1 title='loading'>Loading...</h1>) : (
         
-      <section>
-        <h1>{singlePosts.title}</h1>
+      <section className='full'>
+        <h1 className='title'>{singlePosts.title}</h1>
         {singlePosts.mainImage && singlePosts.mainImage.asset && (
+         
         
-        <img src={singlePosts.mainImage.asset.url} alt={singlePosts.title} title = {singlePosts.title}/>
+        <img className='singleimage' src={singlePosts.mainImage.asset.url} alt={singlePosts.title} title = {singlePosts.title}/>
         )}
         <div>
-          <BlockContent blocks = {singlePosts.body} projectId = "dse9agn3" dataset = "production"/>
+          <BlockContent className="body" blocks = {singlePosts.body} projectId = "dse9agn3" dataset = "production"/>
         </div>
-        <p>Tosin writes</p>
-        <Link to = '/writeups'><button>Other writeups</button></Link>
+        <p className='author'>Tosin writes</p>
+        <div className='singlebtn'>
+         <Link to = '/writeups'><button className='btnbtnbtn'>Other writeups</button></Link>
+        </div>
+       
       </section>
   
 
