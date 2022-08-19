@@ -95,7 +95,7 @@ body {
 .nav-menu {
   list-style: none ;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 30px;
   
 
@@ -126,7 +126,23 @@ body {
     overflow: hidden;
     margin-right:15px;
   }
+
+  .right span {
+    font-family: 'Sacramento', cursive;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 48px;
+    letter-spacing: 1px;
+  
+  }
  
+  .logo {
+    margin: 0px 10px 10px 0px;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 10px;
+  }
   
 }
 
@@ -259,6 +275,16 @@ button:hover {
   cursor: pointer;
 
 }
+
+@media screen and (max-width:452px) {
+  .firstpart {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 30px;
+    height: 1000px;
+  }
+}
 @media screen and (max-width:900px) {
   .firstpart {
     display: flex;
@@ -299,14 +325,20 @@ button:hover {
 
 /*about parttwo*/
 
+.secondpart {
+  height: auto;
+}
+
 .imgpart {
   position: relative;
+  opacity: 1;
   
 }
 
 .bgimg {
   height: 500px;
   width: 100%;
+  opacity: 1;
 }
 
 .text {
@@ -315,6 +347,7 @@ button:hover {
   left:60%;
   font-size: 20px; 
   font-family: 'Lobster';
+ 
 
 
 }
@@ -334,7 +367,39 @@ button:hover {
   margin: 10px 0px 10px 0px;
 }
 
+@media screen and (max-width:452px) {
+ 
+  .bgimg {
+    
+    opacity: 0;
+  }
 
+  .text {
+    position: absolute;
+    top: 20%;
+    left:35%;
+    font-size: 25px; 
+    font-family: 'Lobster';
+    margin-bottom: 10px;
+  
+  
+  }
+  
+  .text2 {
+    position: absolute;
+    top: 32%;
+    left:5%;
+    
+  
+  
+  }
+  
+  .text2 p {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+  }
+}
 
 /*Contact*/
 .contact {
@@ -538,7 +603,7 @@ opacity: 1;
     grid-template-columns: auto auto;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .grid {
     grid-template-columns: auto;
   }
@@ -598,6 +663,36 @@ h3 {
 .btnbtnbtn {
   padding: 10px 43%;
 }
+
+@media(max-width: 768px) {
+  .title {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 16px;
+    font-style: italic;
+    font-family: 'Lobster', cursive;
+    margin: 17px 2px;
+    
+  }
+  
+  .singleimage {
+    width: 300px;
+    height: 300px;
+    margin: 5px 10px;
+    align-items: center;
+  }
+  
+  .body {
+    margin: 5px 10px;
+  
+  }
+  
+  h3 {
+    font-family: 'Lobster', cursive;
+    margin-bottom: 10px;
+  }
+}
+
 
 /*Footer*/
 .footer {
