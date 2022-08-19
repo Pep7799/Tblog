@@ -146,6 +146,10 @@ body {
     display: inline-block;
     font-size: 10px;
   }
+
+  .span2 {
+    margin-left: -10px;
+  }
   
 }
 
