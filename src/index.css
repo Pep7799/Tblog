@@ -114,6 +114,9 @@ body {
   
 }
 
+.span2 {
+  margin-left: -5px;
+}
 .close {
   display: none;
 }
@@ -166,8 +169,8 @@ body {
       top: 60px;
       flex-direction: column;
       background-color: #B2AD4D;
-      width: 60%;
-      height: 80%;
+      width: 100%;
+      height: 100%;
       z-index: 999;
       text-align: center;
       transition: 0.3s;

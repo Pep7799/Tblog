@@ -24,7 +24,7 @@ export default function Header() {
                       
                     </div>
                     <div className='right'>
-                      <h2>TOSIN   <span> Writ<img className='pictwo' src={pic3} alt="" />ngs</span></h2>
+                      <h2>TOSIN   <span> Writ<img className='pictwo' src={pic3} alt="" /><span className='span2'>ngs</span></span></h2>
                     </div>
                    </div>
               
@@ -32,8 +32,8 @@ export default function Header() {
 
             
                <div className='close' onClick={handleClick}>
-                    {click ? (<FaTimesCircle size={20} style={{ color: '#FF0000' }} />)
-                        : (<CgMenuGridR size={20} style={{ color: '000' }} />)}
+                    {click ? (<FaTimesCircle size={20} style={{ color: '#B2AD4D' }} />)
+                        : (<CgMenuGridR size={20} style={{ color: '#000' }} />)}
 
                 </div>
 
