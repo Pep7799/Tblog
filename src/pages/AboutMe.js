@@ -24,7 +24,7 @@ export default function AboutMe() {
         </div>
 
         <div className='picture'>
-          <img src={picone} width= '500' height='500' alt="mine" />
+          <img src={picone} width= '400' height='400' alt="mine" />
         </div>
       </div>
 
@@ -35,11 +35,11 @@ export default function AboutMe() {
           <p className='text'>Services I offer</p>
           <div className='text2'>
            
-            <p>  <GiOpenBook style={{color: '#B2AD4D', fontSize: '25px'}}/> Proofreading and Editing </p><h5>We edit, proofread and sort your works or writings</h5>
+            <p>  <GiOpenBook style={{color: '#B2AD4D', fontSize: '25px'}}/>Beautiful writings </p><h5>Make beauiful writings in different frames  for you and your loved ones</h5>
             <br />
             <br />
             <br />
-            <p> <BsAwardFill style={{color: '#B2AD4D', fontSize: '25px'}}/> Original content </p> <h5>Get your poems and stories with 0% plagiarism</h5>
+            <p> <BsAwardFill style={{color: '#B2AD4D', fontSize: '25px'}}/> Original content </p> <h5>Get your poems and stories with 0% plagiarism. Be assured you have a write-up that can't be duplicated</h5>
           </div>
         </div>
 

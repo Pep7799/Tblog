@@ -18,7 +18,7 @@ function App() {
       <Route path="/writeups/:slug" element= {<SinglePost/>}></Route>
       <Route path="/writeups" element= {<Writeups/>}></Route>
       <Route path="/contact" element= {<Contact/>}></Route>
-      <Route path="/*" element= {<Error/>}></Route>
+      <Route path="*" element= {<Error/>}></Route>
     </Routes>
 
     <Footer/>

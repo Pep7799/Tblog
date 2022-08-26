@@ -225,7 +225,7 @@ body {
 .firstpart {
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
+  margin: 60px 30px 0px 0px;
   height: 690px;
 }
 
@@ -283,25 +283,36 @@ button:hover {
 
 }
 
-@media screen and (max-width:452px) {
+@media screen and (max-width:650px) {
   .firstpart {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin-top: 30px;
-    height: 1000px;
+    height: 1500px;
+  }
+
+  .picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .picture img {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
   }
 }
 @media screen and (max-width:900px) {
   .firstpart {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     margin-top: 60px;
-    height: 900px;
+    height: 600px;
   }
   .picture {
-    align-items: center;
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
@@ -310,7 +321,7 @@ button:hover {
   .picture img {
     width: 300px;
     height: 300px;
-    margin: auto;
+    margin: 50px;
   }
  
 
@@ -374,7 +385,12 @@ button:hover {
   margin: 10px 0px 10px 0px;
 }
 
-@media screen and (max-width:452px) {
+@media screen and (max-width:650px) {
+  .secondpart {
+    margin-top: 250px;
+  }
+  
+  
  
   .bgimg {
     
@@ -463,13 +479,13 @@ button:hover {
   width: 100%;
   text-align: center;
   padding: 17px 35px;
-  background-color: #000;
+  background-color: #B2AD4D;
   border-radius: 35px;
 }
 
 .contactsubmit:hover {
   color: #000;
-  background: #B2AD4D;
+  background: #000;
   cursor: pointer;
 }
 
@@ -708,5 +724,30 @@ h3 {
   background: #FFF;
   padding: 3px 0px;
  
+}
+
+/*Error*/
+.errorpage {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 380px;
+}
+
+button {
+  padding: 10px 20px;
+  color: #B2AD4D;
+  font-size: 15px;
+  font-weight: 700;
+  background: #FFF;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: #B2AD4D;
+  color: #FFF;
+  cursor: pointer;
+
 }
 
