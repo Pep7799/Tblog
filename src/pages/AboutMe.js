@@ -11,7 +11,7 @@ export default function AboutMe() {
       <div className='firstpart'>
         <div className='one'>
           <h1 className='intro'>  THE <br /> <span className='justspan'> ULTIMATE </span> WRITEUP FROM 
-          <br /> FOLAMI OLUWATOSIN </h1>
+          <br /> OLUWATOSIN </h1>
           <ul className='ul2'>
             <li className='li2'>Poems</li>
             <li className='li2'>Short stories</li>
@@ -32,14 +32,14 @@ export default function AboutMe() {
 
         <div className='imgpart'>
           <img src={pictwo} className= "bgimg" alt="animated" />
-          <p className='text'>Services I offer</p>
+          <p className='text'>Why connect with me?</p>
           <div className='text2'>
            
-            <p>  <GiOpenBook style={{color: '#B2AD4D', fontSize: '25px'}}/>Beautiful writings </p><h5>Make beauiful writings in different frames  for you and your loved ones</h5>
+            <p>  <GiOpenBook style={{color: '#B2AD4D', fontSize: '25px'}}/>Results driven </p><h5>uses targets to stay motivated in their work</h5>
             <br />
             <br />
             <br />
-            <p> <BsAwardFill style={{color: '#B2AD4D', fontSize: '25px'}}/> Original content </p> <h5>Get your poems and stories with 0% plagiarism. Be assured you have a write-up that can't be duplicated</h5>
+            <p> <BsAwardFill style={{color: '#B2AD4D', fontSize: '25px'}}/> Problem solver </p> <h5>a thinker who focuses on the problem as stated and tries to synthesize information and knowledge to achieve a solution</h5>
           </div>
         </div>
 
